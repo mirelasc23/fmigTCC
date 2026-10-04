@@ -1,8 +1,7 @@
-package view;
+package controller;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -14,6 +13,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import view.App;
 
 public class TerciaryController {
     @FXML
