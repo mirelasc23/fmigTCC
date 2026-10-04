@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:controller="view.PesquisaController" spacing="10.0" 
+<VBox fx:controller="controller.PesquisaController" spacing="10.0" 
       xmlns="[http://javafx.com/javafx/23](http://javafx.com/javafx/23)" 
       xmlns:fx="[http://javafx.com/fxml/1](http://javafx.com/fxml/1)">
 

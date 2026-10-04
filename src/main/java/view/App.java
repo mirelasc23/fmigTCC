@@ -26,13 +26,23 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    
+    /*@Override
+    public void start(Stage palco) throws Exception {
+        Parent raiz = FXMLLoader.load(getClass().getResource("pesquisa.fxml"));
+
+        Scene cena = new Scene(raiz, 550, 280);
+        palco.setTitle("Pesquisa sobre Programação");
+        palco.setScene(cena);
+        palco.show();
+    }*/
 
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }
 

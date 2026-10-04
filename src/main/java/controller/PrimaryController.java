@@ -6,6 +6,11 @@ import view.App;
 
 public class PrimaryController {
     @FXML
+    private void switchToSearch() throws IOException {
+        App.setRoot("pesquisa");
+    }
+    
+    @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
     }
