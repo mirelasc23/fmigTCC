@@ -1,4 +1,4 @@
-package com.mycompany.aprendendofxcomcomponentizacaoefxml.component;
+package component;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +23,7 @@ public class LogoComponent extends HBox {
         try {
             fxmlLoader.load();
             // Carrega a imagem com segurança a partir dos recursos do projeto
-            InputStream imageStream = getClass().getResourceAsStream("/com/mycompany/aprendendofxcomcomponentizacaoefxml/images/logo.png");
+            InputStream imageStream = getClass().getResourceAsStream("/image/logo_fmig.png");
             
             if (imageStream != null) {
                 imgLogo.setImage(new Image(imageStream));

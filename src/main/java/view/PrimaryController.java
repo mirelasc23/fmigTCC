@@ -1,4 +1,4 @@
-package com.mycompany.aprendendofxcomcomponentizacaoefxml;
+package view;
 
 import java.io.IOException;
 import javafx.fxml.FXML;

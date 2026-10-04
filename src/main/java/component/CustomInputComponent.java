@@ -1,4 +1,4 @@
-package com.mycompany.aprendendofxcomcomponentizacaoefxml.component;
+package component;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,8 +34,18 @@ public class CustomInputComponent extends VBox {
         txtCampo.setText(texto);
     }
 
+    // Getters e Setters para a propriedade "rotulo" (necessário para o FXML)
+    public String getRotulo() {
+        return lblRotulo != null ? lblRotulo.getText() : "";
+    }
+
     public void setRotulo(String textoRotulo) {
         lblRotulo.setText(textoRotulo);
+    }
+
+    // Getters e Setters para a propriedade "placeholder"
+    public String getPlaceholder() {
+        return txtCampo.getPromptText();
     }
 
     public void setPlaceholder(String placeholder) {

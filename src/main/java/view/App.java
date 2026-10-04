@@ -1,4 +1,4 @@
-package com.mycompany.aprendendofxcomcomponentizacaoefxml;
+package view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,6 @@ import java.io.IOException;
  * JavaFX App
  */
 public class App extends Application {
-
     private static Scene scene;
 
     @Override
@@ -20,7 +19,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("primary"), 640, 480);
         
         // --- ADICIONE ESTAS LINHAS PARA CARREGAR O CSS ---
-        String cssPath = getClass().getResource("/com/mycompany/aprendendofxcomcomponentizacaoefxml/css/style.css").toExternalForm();
+        String cssPath = getClass().getResource("/css/style.css").toExternalForm();
         scene.getStylesheets().add(cssPath);
         // -------------------------------------------------
         
@@ -40,5 +39,4 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
 }
