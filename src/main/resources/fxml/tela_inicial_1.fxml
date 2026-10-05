@@ -1,66 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import component.CustomInputComponent?>
+<?import component.LogoComponent?>
+<?import javafx.geometry.Insets?>
 
 <VBox prefHeight="600.0" prefWidth="800.0" 
       xmlns="http://javafx.com/javafx/23" 
       xmlns:fx="http://javafx.com/fxml/1" 
       fx:controller="controller.TelaInicialController">
+    
+    <HBox styleClass="header">
+        <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true">
+            <image>
+                <Image url="@/image/logo_fmig.png" />
+            </image>
+        </ImageView>
 
-    <!-- 1. CABEÇALHO ESTÁTICO (Tamanho fixo, não estica verticalmente) -->
-    <HBox alignment="CENTER_LEFT" minHeight="60.0" prefHeight="60.0" spacing="15.0" style="-fx-background-color: #2c3e50;">
-        <padding>
-            <Insets left="20.0" right="20.0" />
-        </padding>
-        <children>
-            <!-- Logo com proporção mantida -->
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@/image/logo_fmig.png" />
-                </image>
-            </ImageView>
-
-            <!-- Título -->
-            <Label text="Pesquisa para Programadores" textFill="WHITE">
-                <font>
-                    <Font name="System Bold" size="18.0" />
-                </font>
-            </Label>
-        </children>
+        <Label styleClass="header-title" text="Sistema de Pesquisa" />
     </HBox>
 
-    <!-- 2. CONTEÚDO PRINCIPAL (EXPANSÍVEL) -->
-    <!-- A propriedade VBox.vgrow="ALWAYS" faz este bloco ocupar todo o espaço vertical livre -->
     <VBox spacing="15.0" VBox.vgrow="ALWAYS">
-        <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-        </padding>
-        <children>
-            <Label text="Formulário de Cadastro" font="$x1">
-                <font>
-                    <Font name="System Bold" size="16.0" fx:id="x1" />
-                </font>
-            </Label>
 
-            <HBox spacing="10.0" alignment="CENTER_LEFT">
-                <children>
-                    <Label text="Nome Completo:" />
-                    <!-- TextField estica na horizontal se a janela for alargada -->
-                    <TextField fx:id="txtNome" HBox.hgrow="ALWAYS" />
-                </children>
-            </HBox>
+       <children>
+          <LogoComponent fx:id="logoHeader" />
 
-            <!-- Espaçador ou outros elementos da sua tela -->
-            <Button text="Salvar Dados" onAction="#handleSalvar" />
-        </children>
+          <Label text="Primary View" />
+          <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSearch"/>
+
+          <Label text="Tela com Scroll" />
+          <Button fx:id="telaComScroll" text="Tela com Scroll" onAction="#telaComScroll"/>
+
+       </children>
+       <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+       </padding>
     </VBox>
-
 </VBox>
