@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        
+        <!-- CABEÇALHO -->
+        <HBox alignment="CENTER_LEFT" spacing="15.0" style="-fx-background-color: #2c3e50;">
+            <padding>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+            </padding>
+            <children>
+                <!-- Logo -->
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/view/imagens/logo_fmig.png" />
+                    </image>
+                </ImageView>
+                
+                <!-- Título -->
+                <Label text="Sistema de Pesquisa" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+
+        <!-- CONTEÚDO DA TELA (Exemplo) -->
+        <VBox spacing="10.0">
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+            <children>
+                <Label text="Conteúdo principal da página..." />
+            </children>
+        </VBox>
+
+    </children>
+</VBox>

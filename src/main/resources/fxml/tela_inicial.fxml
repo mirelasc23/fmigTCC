@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import component.CustomInputComponent?>
 <?import component.LogoComponent?>
 <?import javafx.geometry.Insets?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" 
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrimaryController">
-   <children>
-      <LogoComponent fx:id="logoHeader" />
-       
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+<VBox prefHeight="600.0" prefWidth="800.0" 
+      xmlns="http://javafx.com/javafx/23" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="controller.TelaInicialController">
+    
+    <HBox styleClass="header">
+        <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true">
+            <image>
+                <Image url="@/image/logo_fmig.png" />
+            </image>
+        </ImageView>
 
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
+        <Label styleClass="header-title" text="Sistema de Pesquisa" />
+    </HBox>
+
+    <VBox spacing="15.0" VBox.vgrow="ALWAYS">
+
+       <children>
+          <LogoComponent fx:id="logoHeader" />
+
+          <Label text="Primary View" />
+          <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSearch"/>
+
+       </children>
+       <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+       </padding>
+    </VBox>
 </VBox>

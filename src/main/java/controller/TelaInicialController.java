@@ -1,4 +1,3 @@
-
 package controller;
 
 import java.io.IOException;
@@ -10,6 +9,11 @@ public class TelaInicialController {
     
     @FXML
     private void switchToSearch() throws IOException {
+        App.setRoot("pesquisa");
+    }
+    
+    @FXML
+    private void handleSalvar() throws IOException {
         App.setRoot("pesquisa");
     }
 }

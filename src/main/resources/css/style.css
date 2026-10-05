@@ -1,11 +1,27 @@
 /* ==========================================================================
-   1. REGRA GLOBAL DA APLICAÇÃO (.root)
+   1.1 REGRA GLOBAL DA APLICAÇÃO (.root)
    ========================================================================== */
 .root {
     /* Definição de cores/fontes padrão */
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-base: #f4f6f9;
     -fx-background-color: #f4f6f9;
+}
+
+/* ==========================================================================
+   1.2 REGRA GLOBAL DO CABEÇALHO
+   ========================================================================== */
+.header {
+    -fx-background-color: #1e88e5;
+    -fx-alignment: center-left;
+    -fx-padding: 15px 20px;
+    -fx-spacing: 15px;
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
 }
 
 /* ==========================================================================
