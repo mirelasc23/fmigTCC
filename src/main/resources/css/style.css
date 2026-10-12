@@ -89,3 +89,10 @@
 .btn-primary:pressed {
     -fx-background-color: #1e40af;
 }
+
+
+.botao-home {
+    -fx-opacity: 0;       /* Oculta o elemento */
+    -fx-max-height: 0;    /* Encolhe o elemento */
+    display: none;
+}

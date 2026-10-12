@@ -14,4 +14,9 @@ public class SecondaryController {
     private void switchToTerciary() throws IOException {
         App.setRoot("terciary");
     }
+    
+    @FXML
+    private void goToPrimary() throws IOException {
+        App.setRoot("primary");
+    }
 }

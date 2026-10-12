@@ -4,8 +4,9 @@
 <?import javafx.scene.layout.VBox?>
 
 <fx:root type="javafx.scene.layout.VBox" 
-         styleClass="botao-home"
+         styleClass="btn-primary"
          spacing="5.0" 
          xmlns:fx="http://javafx.com/fxml/1">
-    <Button onAction="#goToPrimary" text="Ir para Primary" />
+    <Button fx:id="goToPrimary" text="Ir para Primary" 
+            onAction="#goToPrimary" />
 </fx:root>

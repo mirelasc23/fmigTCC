@@ -21,4 +21,8 @@ public class TelaInicialController {
     private void telaComScroll() throws IOException {
         App.setRoot("tela_com_scroll");
     }
+    @FXML
+    private void telaComScroll() throws IOException {
+        App.setRoot("tela_com_scroll");
+    }
 }
