@@ -24,10 +24,8 @@
         <ToggleGroup fx:id="tgOpInicial" />
     </fx:define>
 
-    <!-- 2. SCROLLPANE (Ocupa o centro e expande com a janela) -->
     <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
         <content>
-            <!-- Container interno do ScrollPane com todo o formulário/conteúdo -->
             <VBox spacing="15.0">
                 <padding>
                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

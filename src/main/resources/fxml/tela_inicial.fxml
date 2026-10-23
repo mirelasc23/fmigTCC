@@ -35,6 +35,9 @@
 
           <Label text="Tela com Scroll" />
           <Button fx:id="telaComScroll" text="Tela com Scroll" onAction="#telaComScroll"/>
+          
+          <Label text="FMIG - Tela_01" />
+          <Button fx:id="fmig_01" text="FMIG - Tela_01" onAction="#fmig_01"/>
 
        </children>
        <padding>
