@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane id="AnchorPane" 
-            prefHeight="400.0" 
-            prefWidth="600.0" 
-            xmlns:fx="http://javafx.com/fxml/1" 
-            fx:controller="controller.Fmig_01Controller">
-    
-</AnchorPane>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import component.BotaoHome?>
 
 <VBox prefHeight="600.0" prefWidth="800.0" 
-      xmlns="http://javafx.com/javafx/23" 
       xmlns:fx="http://javafx.com/fxml/1" 
-      fx:controller="controller.PesquisaController">
+      fx:controller="controller.Fmig_01Controller">
 
-    <!-- Definição de ToggleGroups -->
     <fx:define>
-        <ToggleGroup fx:id="tgSo" />
-        <ToggleGroup fx:id="tgLinguagem" />
+        <ToggleGroup fx:id="tgOpInicial" />
     </fx:define>
 
     <!-- 2. SCROLLPANE (Ocupa o centro e expande com a janela) -->
