@@ -10,6 +10,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import component.BotaoHome?>
 
 <VBox fx:controller="controller.PesquisaController" spacing="10.0" 
       xmlns="[http://javafx.com/javafx/23](http://javafx.com/javafx/23)" 
@@ -63,5 +64,7 @@
 
         <!-- Botão de Ação -->
         <Button onAction="#handleSubmeter" text="Submeter pesquisa"/>
+        
+       <BotaoHome /> 
     </children>
 </VBox>

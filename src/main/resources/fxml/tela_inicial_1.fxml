@@ -9,6 +9,7 @@
 <?import component.CustomInputComponent?>
 <?import component.LogoComponent?>
 <?import javafx.geometry.Insets?>
+<?import component.BotaoHome?>
 
 <VBox prefHeight="600.0" prefWidth="800.0" 
       xmlns="http://javafx.com/javafx/23" 
@@ -38,6 +39,8 @@
 
           <Label text="Tela com Scroll" />
           <Button fx:id="telaComScroll" text="Tela com Scroll" onAction="#telaComScroll"/>
+          
+          <BotaoHome />
 
        </children>
        <padding>

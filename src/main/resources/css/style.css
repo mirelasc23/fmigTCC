@@ -73,7 +73,7 @@
    4. ESTILOS GERAIS DE BOTÕES
    ========================================================================== */
 .btn-primary {
-    -fx-background-color: #2563eb;
+    /*-fx-background-color: #2563eb;*/
     -fx-text-fill: #ffffff;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
