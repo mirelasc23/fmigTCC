@@ -20,11 +20,8 @@
                        fitHeight="16.0" 
                        fitWidth="16.0" 
                        pickOnBounds="true" 
-                       preserveRatio="true">
-                <image>
-                    <Image url="@/caminho/para/seu/icone.png" />
-                </image>
-            </ImageView>
+                       preserveRatio="true"/>
+            
         </graphic>
     </Button>/>
 </fx:root>
