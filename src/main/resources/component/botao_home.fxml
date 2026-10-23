@@ -6,6 +6,7 @@
 
 <fx:root type="javafx.scene.layout.VBox" 
          styleClass="btn-primary"
+         alignment="CENTER_LEFT" 
          spacing="5.0" 
          xmlns:fx="http://javafx.com/fxml/1">
     <padding>
@@ -13,5 +14,30 @@
     </padding>
     
     <Button fx:id="goToPrimary" text="Ir para Primary" 
-            onAction="#goToPrimary" />
+            onAction="#goToPrimary"> 
+        <graphic>
+            <ImageView fx:id="iconeHome" 
+                       fitHeight="16.0" 
+                       fitWidth="16.0" 
+                       pickOnBounds="true" 
+                       preserveRatio="true">
+                <image>
+                    <Image url="@/caminho/para/seu/icone.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>/>
 </fx:root>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER">
+    <Button text="Salvar">
+        <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/caminho/para/seu/icone.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+</VBox>
