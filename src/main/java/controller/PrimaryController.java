@@ -19,4 +19,14 @@ public class PrimaryController {
     private void switchToTerciary() throws IOException {
         App.setRoot("terciary");
     }
+    
+    @FXML
+    private void fmig_01() throws IOException {
+        App.setRoot("fmig_01");
+    }
+    
+    @FXML
+    private void fmig_02() throws IOException {
+        App.setRoot("fmig_02");
+    }
 }

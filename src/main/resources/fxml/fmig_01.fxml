@@ -25,6 +25,8 @@
         <CustomInputComponent fx:id="inputRegraOrigem" rotulo="Senha do Administrador da Rede:"/>
         <CustomInputComponent fx:id="inputRegraDestino" rotulo="Regra de Destino:"/>
         
+        <Button fx:id="fmig_02" text="FMIG - Tela_02" onAction="#fmig_02"/>
+        
         <BotaoHome fx:id="btnHome" visible="true" managed="true" />
         
         <BotaoHome />

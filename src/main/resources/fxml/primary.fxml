@@ -18,6 +18,12 @@
       <Label text="Terciary View" />
       <Button fx:id="terciaryButton" text="Switch to Terciary View" onAction="#switchToTerciary" />
       
+      <Label text="FMIG - Tela_01" />
+      <Button fx:id="fmig_01" text="FMIG - Tela_01" onAction="#fmig_01"/>
+      
+      <Label text="FMIG - Tela_02" />
+      <Button fx:id="fmig_02" text="FMIG - Tela_02" onAction="#fmig_02"/>
+      
       <BotaoHome />
         
    </children>

@@ -19,4 +19,9 @@ public class Fmig_01Controller {
     private void goToPrimary() throws IOException {
         App.setRoot("primary");
     }
+    
+    @FXML
+    private void fmig_02() throws IOException {
+        App.setRoot("fmig_02");
+    }
 }
