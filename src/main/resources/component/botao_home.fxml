@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
 
 <fx:root type="javafx.scene.layout.VBox" 
          styleClass="btn-primary"
@@ -23,18 +24,7 @@
                        preserveRatio="true"/>
             
         </graphic>
-    </Button>/>
+    </Button>
 </fx:root>
 
 
-<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER">
-    <Button text="Salvar">
-        <graphic>
-            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@/caminho/para/seu/icone.png" />
-                </image>
-            </ImageView>
-        </graphic>
-    </Button>
-</VBox>
