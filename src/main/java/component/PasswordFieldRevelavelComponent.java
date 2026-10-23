@@ -17,7 +17,7 @@ public class PasswordFieldRevelavelComponent extends HBox {
 
     public PasswordFieldRevelavelComponent() {
         // Carrega o FXML associado ao componente customizado
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/seuprojeto/components/PasswordFieldRevelavel.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("PasswordFieldRevelavel.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 

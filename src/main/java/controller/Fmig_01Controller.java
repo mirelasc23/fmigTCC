@@ -1,10 +1,13 @@
 package controller;
 
+import component.PasswordFieldRevelavelComponent;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import view.App;
 
 public class Fmig_01Controller {
+     @FXML private PasswordFieldRevelavelComponent txtSenhaCustom;
+      
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");

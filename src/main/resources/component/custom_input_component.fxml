@@ -9,5 +9,5 @@
          spacing="5.0" 
          xmlns:fx="http://javafx.com/fxml/1">
     <Label fx:id="lblRotulo" style="-fx-font-weight: bold;" text="Rótulo" />
-    <TextField fx:id="txtCampo" promptText="Digite algo..." hideText="True" />
+    <TextField fx:id="txtCampo" promptText="Digite algo..."/>
 </fx:root>

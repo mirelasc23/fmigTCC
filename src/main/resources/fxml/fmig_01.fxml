@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import component.PasswordFieldRevelavelComponent?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" 
       xmlns:fx="http://javafx.com/fxml/1" 
@@ -23,6 +24,7 @@
         <LogoComponent fx:id="logoHeader" />
 
         <CustomInputComponent fx:id="acessoRoot" rotulo="Senha do Administrador da Rede:"/>
+        <PasswordFieldRevelavelComponent fx:id="txtSenhaCustom" />
         <HBox spacing="15.0">
             <children>
                 <RadioButton fx:id="tbMigrar" selected="true" text="Migrar regras" toggleGroup="$tgOpInicial" />
